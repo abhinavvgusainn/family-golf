@@ -2,10 +2,10 @@ var cursor = document.querySelector("#cursor");
 var orb = document.querySelector("#orb");
 
 document.addEventListener("mousemove", function (dets) {
-  cursor.style.left = dets.x + "px";
-  cursor.style.top = dets.y + "px";
-  orb.style.left = dets.x - 150 + "px";
-  orb.style.top = dets.y - 150 + "px";
+  cursor.style.left = dets.x - 10 + "px";
+  cursor.style.top = dets.y - 10 + "px";
+  orb.style.left = dets.x - 200 + "px";
+  orb.style.top = dets.y - 200 + "px";
 });
 
 gsap.to("#nav", {
